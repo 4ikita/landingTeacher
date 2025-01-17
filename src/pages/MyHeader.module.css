@@ -1,0 +1,15 @@
+.myHdr{
+    z-index: 1000;
+    padding: 0px 30px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+@media (max-width: 425px) {
+
+.myHdr{
+    padding: 0;
+}
+
+}

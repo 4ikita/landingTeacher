@@ -1,0 +1,946 @@
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+@media (max-width: 1200px) {
+    html {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 14px;
+    }
+}
+
+
+@font-face {
+    font-family: "Inter";
+    src: url('../fonts/Inter-VariableFont_opsz,wght.ttf');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#root{
+    font-family: 'Inter';
+    display: flex;
+    justify-content: center;
+    background-image: url('../assets/background.svg');
+    
+}
+
+.App{
+    width: 90%;
+    max-width: 1200px;
+    
+}
+
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 1.25rem;
+    margin: 6.25rem 0;
+    
+    
+}
+.about_content{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 1.25rem;
+   
+    
+    
+}
+.about_content h4{
+    font-weight: normal;
+    color: rgba(255, 255, 255, 0.446);
+    font-size: 1rem;
+}
+
+.about_content h1{
+    color: rgba(255, 255, 255, 0.92);
+    font-size: clamp(2rem, 5vw, 3rem);
+}
+.about_content span{
+    color: rgba(196, 240, 66, 1);
+    
+}
+
+.about_form{
+    display: flex;
+    background-color: rgba(28, 28, 28, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.04);
+    border-radius: 32px;
+    padding: 0.875rem 1.125rem;
+    
+}
+
+.about_form input{
+    flex-grow: 2;
+}
+.about_form button{
+    flex-grow: 1;
+}
+
+
+.edFeatures,.edSupplies,.edProgress,.FAQ,.reviews,.cta_getStarted{
+    
+    padding: 0.5rem 1.125rem;
+    margin-bottom: 8.75rem;
+    
+}
+.edFeatures_content,.edSupplies_content,.edProgress_content{
+    margin-top: 1.875rem;
+    display: flex;
+    justify-content: center;
+    gap: 1.25rem;
+    height: 40rem;
+    color: rgba(255, 255, 255, 0.45);
+}
+.edSupplies_content{
+    height: 21.5rem;
+}
+.edProgress_content{
+    background-color: #161616;
+
+}
+
+
+.edFeatures_content_sm{
+    display: flex;
+    gap: 1.25rem;
+    flex-direction: column;
+    flex-grow: 1;
+    max-width: 35%;
+}
+
+.edFeatures_content_big{
+    flex-direction: row;
+    display: flex;
+    gap: 1.25rem;
+    flex-grow: 1;
+    max-width: 65%;
+}
+
+.content_item{
+    overflow: hidden;
+    max-width: 23.438rem;
+    background-color: #1f1f1f;
+    font-size: 1.25rem;
+    padding: 1.25rem 2.5rem;
+    flex-grow: 1;
+    border-radius: 2rem;
+    background-image: url('../assets/line.png');
+    background-repeat: no-repeat;
+
+}
+.content_item h4{
+    font-weight: normal;
+    color: rgba(237, 237, 237, 1);
+    margin-bottom: 1.25rem;
+}
+
+
+.item1{
+    background-position-x: -23.75rem;
+    background-position-y: 1.125rem;
+}
+
+.item1 img{
+    width: 16.26rem;
+    position: relative;
+    top: 15%;
+    left: 40%;
+     
+    transform: translateX(-10%)translateY(-15%);
+}
+.item2 img{
+    width: 20rem;
+    position: relative;
+    top: -15%;
+    left: 20%;
+    transform: translateY(10%) translateX(-10%);
+   
+}
+.item3 img{
+    width: 28.75rem;
+    position: relative;
+    top: 10%;
+    left: 5%;
+    transform: translateY(-10%) translateX(-10%);
+    
+}
+.item5 img{
+    width: 25rem;
+    position: relative;
+    top: 32%;
+    left: 32%;
+    transform: translateY(-10%) translateX(-10%);
+    
+}
+.item6 img{
+    width: 21.25rem;
+    position: relative;
+    top: 32%;
+    left: 35%;
+    transform: translateY(-10%) translateX(-10%);
+    
+}
+.item4 img{
+    width: 28.75rem;
+    position: relative;
+    top: 10%;
+    left: 10%;
+    transform: translateY(-10%) translateX(-10%);
+    
+}
+.edProgress_content{
+    margin-top: 1.875rem;
+    display: flex;
+    gap: 1.25rem;
+    color: rgba(255, 255, 255, 0.45);
+    border: 0.5px solid ;
+    border-radius: 32px;
+    
+    font-size: 1.25rem;
+
+}
+
+.edProgress_content .big{
+    flex: 2 1 0;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+
+}
+
+.big img{
+    position: relative;
+    top: 9%;
+
+}
+
+.edProgress_content .small{
+    flex: 2 1 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.875rem;
+    padding: 1.875rem;
+}
+
+.item8{
+    display: flex;
+    flex-direction: column;
+    gap: 0.875rem;
+    background-color: #1f1f1f;
+    border-radius: 16px;
+    padding: 2.5rem;
+    flex: 1 1 0;
+}
+
+.item8 h4{
+    font-weight: normal;
+    color: rgba(237, 237, 237, 1);
+    margin-bottom: 0.875rem;
+}
+
+
+
+.item2{
+    background-position-x: -18.75rem;
+    background-position-y: -5.625rem;
+}
+.item3{
+    background-position-x: -43.75rem;
+    background-position-y: 10.625rem;
+    max-width: 50%;
+}
+.item4{
+    background-position-x: -68.75rem;
+    background-position-y: 10.625rem;
+    max-width: 50%;
+}
+
+.edFeatures h2,.edSupplies h2,.edProgress h2,.FAQ h2,.reviews h2, .pricing h2, .cta_getStarted h2{
+    color: rgba(237, 237, 237, 1);
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+
+
+.edSupplies .content_item{
+    overflow: hidden;
+    max-width: 50%;
+    background-color: #161616;
+    font-size: 1.25rem;
+    padding: 1.25rem 2.5rem;
+    flex-grow: 1;
+    border: 0.5px solid;
+    border-radius: 32px;
+    background-image:  none;
+    
+}
+
+.small_bulletpoints{
+    display: flex;
+    gap: 2.25rem;
+    align-items: center;
+}
+
+.FAQ{
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    font-size: 1.25rem;
+    color: rgba(255, 255, 255, 0.45);
+}
+.FAQ_content{
+    display: flex;
+    gap: 1.25rem
+    
+}
+
+.third{
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    flex: 1 1 0;
+    
+}
+
+.rightside{
+    display: flex;
+    flex: 1 1 0;
+    
+}
+
+.third img, .rightside img, .bottomside img{
+    width: 1.5rem;
+}
+
+
+.bottomside{
+    display: flex;
+    align-items: center;
+
+}
+
+.bottomside_border{
+    background-color: #1f1f1f;
+    border-radius: 16px;
+    padding: 1.25rem;
+}
+.bonus{
+    flex: 1 1 0;
+    background-image: url('../assets/bonusBG.png');
+    background-repeat: no-repeat;
+    background-position-x: -8.125rem;
+    background-position-y: -14rem;
+    padding: 1.875rem;
+    border-radius: 16px;
+    color: rgba(22, 22, 22, 0.6);
+    height: 10rem;
+}
+
+.bonus h3{
+    color: #161616;
+}
+
+.reviews{
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.reviews_content{
+    display: flex;
+    gap: 1.25rem;
+}
+
+.reviews_big{
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.reviews_promise{
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 0;
+    background-color: #1f1f1f;
+    padding: 2.5rem;
+    font-size: 1.25rem;
+    border-radius: 16px;
+    color: rgba(255, 255, 255, 0.45);
+    gap: 1.25rem;
+}
+
+.reviews_promise h2{
+    color: #c4f042;
+    font-weight: normal;
+}
+
+.reviews_row{
+    display: flex;
+    gap: 1.25rem;
+    
+}
+
+.reviews_item{
+    display: flex;
+    flex-direction: column;
+    flex: 2 1 0;
+    gap: 1.25rem;
+    background-color: #161616;
+    color: rgba(255, 255, 255, 0.45);
+    border-radius: 16px;
+    border: 0.5px solid;
+    padding: 1.875rem;
+}
+
+.reviews_item h3{
+    font-weight: normal;
+    color: rgba(237, 237, 237, 1);
+    margin-bottom: 0.875rem;
+
+}
+
+.reviews_item img{
+    width: 3rem;
+}
+
+.reviews_info{
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+}
+
+.reviews_small{
+    display: flex;
+}
+
+.pricing{
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    font-weight: 300;
+}
+
+.pricing_content{
+    display: flex;
+    gap: 1rem;
+}
+
+.pricing_item{
+    display: flex;
+    flex-direction: column;
+    border: 0.5px solid;
+    border-radius: 16px;
+    background-color: #1f1f1f;
+    color: rgba(255, 255, 255, 0.45);
+    padding: 1.875rem;
+    gap: 1rem;
+    flex: 1 1 0;
+}
+
+.disclaimer{
+    font-size: 0.75rem;
+    line-height: normal;
+}
+
+.pricing_item_1{
+    background-color: #151515;
+}
+.pricing_item_1 .item_title{
+    color: #ffffff;
+}
+
+.pricing_item_2{
+    background-color: #c4f042;
+    color: rgba(85, 104, 29, 1);
+}
+.pricing_item_2 .item_title{
+    color: #151515;
+}
+.pricing_item_3{
+    background-color: #1f1f1f;
+}
+.pricing_item_3 .item_title{
+    color: #ffffff;
+}
+
+.item_title{
+    font-size: 1.75rem;
+    font-weight: 500;
+
+}
+
+.item_info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.item_info span{
+    font-size: 1.75rem;
+    font-weight: 500;
+}
+.item_info button{
+    margin: 1rem 0;
+}
+
+.amountOfLessons span{
+    color: #ffffff;
+}
+
+.singleLessonPrice span{
+    color: #c4f042;
+}
+
+.pricing_item_2 .singleLessonPrice span{
+    color: #151515;
+}
+.pricing_item_2 .amountOfLessons span{
+    color: #151515;
+}
+
+
+
+.pricing_details{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+
+
+.lesson_details{
+    display: flex;
+    justify-content: space-between;
+    height: 2.875rem;
+    align-items: center ;
+    padding: 1rem;
+    font-size: 0.875rem;
+}
+.pricing_item .lesson_details:nth-child(2n-1){
+    background-color: rgb(35, 35, 35);
+}
+
+.pricing_item_2 .lesson_details:nth-child(2n-1){
+    background-color: rgb(188, 230, 65);
+}
+
+.detail_value{
+    color: #ffffff;
+}
+
+.pricing_item_2 .detail_value{
+    color: #151515;
+}
+
+.cta_getStarted{
+    display: flex;
+    flex-direction: row;
+    background-image: url("../assets/cta_getStarted_bg.png");
+    background-color: #1f1f1f;
+    background-repeat: no-repeat;
+    background-position-x: -3rem;
+    background-position-y: -3rem;
+    padding: 4rem;
+    margin-top: 1.875rem;
+    border-radius: 16px;
+    font-size: 1rem;
+    color: rgb(126, 126, 126);
+}
+
+.cta_title{
+    flex: 1 1 0;
+
+}
+
+.cta_form{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    background-color: #151515;
+    padding: 2.5rem;
+    border-radius: 16px;
+    flex: 1 1 0;
+    
+}
+
+.cta_form input{
+    border: 1px rgb(51, 51, 51) solid;
+    height: 3.5rem;
+    font-size: 1rem;
+}
+
+.cta_form button{
+    margin-top: 1.25rem;
+    height: 3.5rem;
+}
+
+.cta_socials{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    flex: 1 1
+}
+
+.cta_socials a {
+    text-decoration: none;
+    
+}
+
+.cta_socials:hover{
+    color:#c4f042;
+    transition: color 0.3s;
+}
+.cta_socials img{
+    width: 3rem;
+    height: 3rem;
+}
+.highlight {
+    
+    box-shadow: 0 0 20px #ffcc00;
+    transition: all 0.3s ease;
+  }
+
+.footer_layout{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.contacts{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: rgb(126, 126, 126);
+    gap: 4rem;
+}
+
+.contacts span {
+    color: #ffffff;
+}
+
+.contacts img{
+    width: 2.5rem;
+}
+
+.socials img{
+    margin-left: 2rem;
+}
+
+.copyrights{
+    display: flex;
+    justify-content: center;
+    color: rgb(126, 126, 126);
+}
+
+.policies{
+    display: none;
+    gap: 1rem;
+    
+}
+
+.policies a {
+    text-decoration: none;
+    color: rgb(126, 126, 126);
+}
+
+.disclaimer{
+    display: none;
+}
+
+
+@media (max-width: 768px) {
+    body {
+        background-color: lightgray;
+    }
+
+    .container {
+        padding: 0.875rem;
+    }
+
+   .about{
+        align-items: flex-start;
+        margin: 10rem 0 1.875rem 0;
+   }
+    .about img{
+        width: 100%;
+    
+    }
+   
+
+    .about_form input{
+        
+        height: 3rem;
+    }
+    .about_form button{
+        height: 3rem;
+    }
+
+    .reviews_row,.footer_layout,.bottomside{
+        flex-direction: column;
+    }
+
+    .edFeatures_content,.edProgress_content{
+        height: auto;
+    }
+
+    .content_item{
+        font-size: 1.125rem;
+        max-height: 15rem;
+        max-width: 26.438rem;
+    }
+
+    .edFeatures_content_big{
+        flex-direction: column;
+        max-width: 50%;
+    }
+    .edFeatures_content_sm{
+        max-width: 50%;
+    }
+    .content_item img{
+        width: 100%;
+    }
+    .item3 img{
+        transform: translateY(-2%) translateX(-4%);
+    }
+
+    .reviews_item{
+        font-size: 1rem;
+    }
+
+    .reviews_big{
+        flex-direction: row;
+    }
+
+    .edFeatures, .edSupplies, .edProgress, .FAQ, .reviews, .cta_getStarted {
+        padding: 0.5rem 0;
+        margin-bottom: 6rem;
+    }
+
+    .edSupplies_content{
+        flex-direction: row;
+        height: auto;
+    }
+
+    .item5 img{
+        top: 16%;
+        left: 32%;
+   
+        
+    }
+    .item6 img{
+        top: 0;
+        left: 25%;
+        transform: translateY(-25%) translateX(-10%);
+        
+    }
+
+    .edProgress_content{
+        flex-direction: column;
+        height: auto;
+    }
+    .big{
+        padding: 2.5rem 0 2.5rem 2.5rem;
+    }
+    .big img{
+        width: 100%;
+    }
+
+    .edProgress_content .small{
+        padding: 1.875rem;
+    }
+
+    .item8{
+        padding: 1.875rem;
+    }
+
+    .bonus{
+        background-position-x: -10.125rem;
+        background-position-y: -16rem;
+        padding: 2.875rem;
+
+    }
+
+    .pricing_item{
+        padding: 1.125rem;
+        max-width: 33.33%;
+    }
+
+    .cta_getStarted{
+        padding: 1.5rem 2rem;
+        gap: 2rem;
+    }
+    .footer_layout,.contacts{
+        flex-direction: row;
+        align-items: center;
+        font-size: 1rem;
+        gap: 2rem;
+    }
+
+    
+
+
+    .socials img:first-child{
+        margin-left: 0;
+    }
+
+    
+}
+
+@media (max-width: 630px) {
+    body {
+        font-size: 1.25rem;
+        background-color: lightgray;
+    }
+
+    .container {
+        padding: 0.625rem;
+    }
+
+    .about{
+        flex-direction: column-reverse;
+        padding: 0;
+        
+    }
+    .about img{
+        width: 60%;
+        margin-bottom: 1.875rem;
+    }
+    .about_form{
+        flex-direction: column;
+        gap: 0.875rem;
+        border: none;
+        background: none;
+    }
+
+    .about_form input{
+        background-color: rgba(28, 28, 28, 0.6);
+        border: 1px solid rgba(255, 255, 255, 0.04);
+        height: 3rem;
+    }
+    .about_form button{
+        height: 3rem;
+    }
+
+    .edFeatures_content,.FAQ_content,.reviews_content,.reviews_row,.pricing_content,.cta_getStarted,.footer_layout,.contacts,.policies,.bottomside{
+        flex-direction: column;
+    }
+
+    .edFeatures_content_big{
+        flex-direction: column;
+        max-width: 100%;
+    }
+    .edFeatures_content_sm{
+        max-width: 100%;
+    }
+
+    .copyrights{
+        flex-direction: column-reverse;
+    }
+
+    .edFeatures_content{
+        height: auto;
+        align-items: center;
+        
+    }
+
+    
+    
+
+    .content_item{
+        font-size: 1.25rem;
+        max-height: 18rem;
+        
+    }
+    .content_item img{
+        width: 100%;
+    }
+    .item3 img{
+        transform: translateY(-2%) translateX(-4%);
+    }
+
+    .reviews_item{
+        font-size: 1.25rem;
+    }
+    .reviews_big{
+        flex-direction: column;
+    }
+
+    .edFeatures, .edSupplies, .edProgress, .FAQ, .reviews {
+        padding: 0.5rem 0;
+        margin-bottom: 6rem;
+    }
+
+    .edSupplies_content{
+        flex-direction: column;
+        height: auto;
+        
+    }
+
+    .edSupplies_content .content_item{
+        max-width: 100%;
+    }
+
+    .edProgress_content{
+        flex-direction: column;
+        height: auto;
+    }
+    .big{
+        padding: 2.5rem;
+    }
+    .big img{
+        width: 100%;
+    }
+
+    .edProgress_content .small{
+        padding: 1.875rem;
+    }
+
+    .item8{
+        padding: 1.875rem;
+    }
+
+    .pricing_item{
+        max-width: 100%;
+    }
+
+    .cta_form{
+        flex-direction: column;
+    }
+    .footer_layout,.contacts{
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .copyrights{
+        gap: 1rem;
+    }
+
+    
+
+
+    .socials img:first-child{
+        margin-left: 0;
+    }
+
+    
+}

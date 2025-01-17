@@ -1,0 +1,52 @@
+/* Базовые стили для кнопки */
+button {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease; /* Плавный переход для эффектов */
+}
+
+
+/* Зеленая кнопка */
+.myGreenBtn {
+    padding: 12px 24px; /* Стандартный размер */
+    background-color: rgba(196, 245, 66, 1);
+    color: #151515;
+    border: none;
+    border-radius: 100px;
+    text-align: center;
+    display: inline-block;
+}
+
+/* Белая кнопка */
+.myWhiteBtn {
+    padding: 12px 24px;
+    background-color: rgba(237, 237, 237, 1);
+    color: #151515;
+    border: none;
+    border-radius: 100px;
+    text-align: center;
+    display: inline-block;
+}
+
+/* Ховер-эффекты */
+.myGreenBtn:hover, 
+.myWhiteBtn:hover {
+    transform: scale(1.05); /* Увеличение кнопки */
+    opacity: 0.9; /* Легкий эффект затемнения */
+}
+
+/* Медиазапросы для адаптивности */
+@media (max-width: 768px) {
+    .myGreenBtn, .myWhiteBtn {
+        padding: 10px 20px; /* Уменьшаем размер кнопки */
+        font-size: 14px; /* Уменьшаем шрифт */
+    }
+}
+
+@media (max-width: 425px) {
+    .myGreenBtn, .myWhiteBtn {
+        padding: 8px 16px; /* Еще меньше на маленьких экранах */
+        font-size: 12px; /* Уменьшаем шрифт для компактности */
+    }
+}

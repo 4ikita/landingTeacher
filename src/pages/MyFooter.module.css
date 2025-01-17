@@ -1,0 +1,21 @@
+.myFtr{
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+    margin: 0 auto;
+    padding: 20px 0;
+    background-color: #151515;
+    
+}
+
+
+
+@media (max-width: 425px) {
+
+    .myFtr{
+        align-items: center;
+        text-align: center;
+        font-size: 1rem;
+    }
+}
+
